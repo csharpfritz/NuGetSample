@@ -7,6 +7,12 @@
 *.userosscache
 *.sln.docstates
 
+# Build-system files
+project.lock.json
+
+# NuGet package build files
+dist/
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
