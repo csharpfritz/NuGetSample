@@ -12,6 +12,7 @@ project.lock.json
 
 # NuGet package build files
 dist/
+nuget/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
