@@ -63,13 +63,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NuGetSample.Math\NuGetSample.Math.csproj">
-      <Project>{598726d3-ab32-4461-9e3c-54d5ad377085}</Project>
-      <Name>NuGetSample.Math</Name>
-    </ProjectReference>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+    <ProjectReference Include="..\NuGetSample.Math.Managed\NuGetSample.Math.Managed.csproj">
+      <Project>{79db7020-6282-4d38-9610-c6c174099124}</Project>
+      <Name>NuGetSample.Math.Managed</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
