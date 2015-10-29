@@ -9,7 +9,6 @@ md nuget\lib\net40
 md dist
 
 :: Copy the DLLs to the correct folder
-
 copy .\NuGetSample.Math.Managed\bin\%1\NuGetSample.Math.Managed.dll .\nuget\lib\net40
 
 :: Pack the nupkg
