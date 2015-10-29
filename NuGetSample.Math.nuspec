@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>NuGetSample.Math</id>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <title>NuGet Sample Math Package</title>
     <authors>csharpfritz</authors>
     <owners>NuGet</owners>
@@ -11,7 +11,7 @@
     <iconUrl>http://go.microsoft.com/fwlink/?LinkID=386613</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A sample package demonstrating how to package assets for use across multiple platforms</description>
-    <releaseNotes>Initial release featuring the amazing hypotenuse calculation</releaseNotes>
+    <releaseNotes>Added Windows Phone compatibility</releaseNotes>
     <copyright>Copyright 2015</copyright>
     <tags>NuGetSample Math</tags>
   </metadata>
