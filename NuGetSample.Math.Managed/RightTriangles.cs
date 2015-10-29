@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace NuGetSample.Math
 {
@@ -18,8 +15,10 @@ namespace NuGetSample.Math
     public static double CalculateHypoteneuseLength(double a, double b)
     {
 
-      if (a <= 0) throw new ArgumentOutOfRangeException(nameof(a), "Parameter must be greater than zero");
-      if (b <= 0) throw new ArgumentOutOfRangeException(nameof(b), "Parameter must be greater than zero");
+      // Argument validation
+      if (a <= 0) throw new ArgumentOutOfRangeException("a", "Parameter must be greater than zero");
+      if (b <= 0) throw new ArgumentOutOfRangeException("b", "Parameter must be greater than zero");
+
       return System.Math.Sqrt(a * a + b * b);
 
     }

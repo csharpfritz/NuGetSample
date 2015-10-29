@@ -14,8 +14,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NuGetPackaging", "NuGetPackaging", "{794085DD-FCED-454A-809F-19FD950690C1}"
 	ProjectSection(SolutionItems) = preProject
 		NuGet.Config = NuGet.Config
-		NuGetSample.Math\NuGetSample.Math.nuspec = NuGetSample.Math\NuGetSample.Math.nuspec
+		NuGetSample.Math.nuspec = NuGetSample.Math.nuspec
 		pack.cmd = pack.cmd
+		SolutionInfo.cs = SolutionInfo.cs
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetSample.Math.Managed", "NuGetSample.Math.Managed\NuGetSample.Math.Managed.csproj", "{79DB7020-6282-4D38-9610-C6C174099124}"
@@ -23,12 +24,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestInstall", "TestInstall\TestInstall.csproj", "{730C2D44-FE6F-4D00-B7A2-1C69B72D4488}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{E8101CB9-E9EC-42E3-94BF-E235C7B22024}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetSample.Math.PCL", "NuGetSample.Math.PCL\NuGetSample.Math.PCL.csproj", "{598726D3-AB32-4461-9E3C-54D5AD377085}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneApp1", "PhoneApp1\PhoneApp1.csproj", "{053A363B-8984-446C-BCE7-88146CB61AD2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetSample.Math.Phone", "NuGetSample.Math.Phone\NuGetSample.Math.Phone.csproj", "{54FE6E7C-70D6-4615-94F9-D7DC8EDA3DB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -76,48 +71,6 @@ Global
 		{730C2D44-FE6F-4D00-B7A2-1C69B72D4488}.Release|ARM.Build.0 = Release|Any CPU
 		{730C2D44-FE6F-4D00-B7A2-1C69B72D4488}.Release|x86.ActiveCfg = Release|Any CPU
 		{730C2D44-FE6F-4D00-B7A2-1C69B72D4488}.Release|x86.Build.0 = Release|Any CPU
-		{598726D3-AB32-4461-9E3C-54D5AD377085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{598726D3-AB32-4461-9E3C-54D5AD377085}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{598726D3-AB32-4461-9E3C-54D5AD377085}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{598726D3-AB32-4461-9E3C-54D5AD377085}.Debug|ARM.Build.0 = Debug|Any CPU
-		{598726D3-AB32-4461-9E3C-54D5AD377085}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{598726D3-AB32-4461-9E3C-54D5AD377085}.Debug|x86.Build.0 = Debug|Any CPU
-		{598726D3-AB32-4461-9E3C-54D5AD377085}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{598726D3-AB32-4461-9E3C-54D5AD377085}.Release|Any CPU.Build.0 = Release|Any CPU
-		{598726D3-AB32-4461-9E3C-54D5AD377085}.Release|ARM.ActiveCfg = Release|Any CPU
-		{598726D3-AB32-4461-9E3C-54D5AD377085}.Release|ARM.Build.0 = Release|Any CPU
-		{598726D3-AB32-4461-9E3C-54D5AD377085}.Release|x86.ActiveCfg = Release|Any CPU
-		{598726D3-AB32-4461-9E3C-54D5AD377085}.Release|x86.Build.0 = Release|Any CPU
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Debug|ARM.ActiveCfg = Debug|ARM
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Debug|ARM.Build.0 = Debug|ARM
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Debug|ARM.Deploy.0 = Debug|ARM
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Debug|x86.ActiveCfg = Debug|x86
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Debug|x86.Build.0 = Debug|x86
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Debug|x86.Deploy.0 = Debug|x86
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Release|ARM.ActiveCfg = Release|ARM
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Release|ARM.Build.0 = Release|ARM
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Release|ARM.Deploy.0 = Release|ARM
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Release|x86.ActiveCfg = Release|x86
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Release|x86.Build.0 = Release|x86
-		{053A363B-8984-446C-BCE7-88146CB61AD2}.Release|x86.Deploy.0 = Release|x86
-		{54FE6E7C-70D6-4615-94F9-D7DC8EDA3DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{54FE6E7C-70D6-4615-94F9-D7DC8EDA3DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{54FE6E7C-70D6-4615-94F9-D7DC8EDA3DB6}.Debug|ARM.ActiveCfg = Debug|ARM
-		{54FE6E7C-70D6-4615-94F9-D7DC8EDA3DB6}.Debug|ARM.Build.0 = Debug|ARM
-		{54FE6E7C-70D6-4615-94F9-D7DC8EDA3DB6}.Debug|x86.ActiveCfg = Debug|x86
-		{54FE6E7C-70D6-4615-94F9-D7DC8EDA3DB6}.Debug|x86.Build.0 = Debug|x86
-		{54FE6E7C-70D6-4615-94F9-D7DC8EDA3DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{54FE6E7C-70D6-4615-94F9-D7DC8EDA3DB6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{54FE6E7C-70D6-4615-94F9-D7DC8EDA3DB6}.Release|ARM.ActiveCfg = Release|ARM
-		{54FE6E7C-70D6-4615-94F9-D7DC8EDA3DB6}.Release|ARM.Build.0 = Release|ARM
-		{54FE6E7C-70D6-4615-94F9-D7DC8EDA3DB6}.Release|x86.ActiveCfg = Release|x86
-		{54FE6E7C-70D6-4615-94F9-D7DC8EDA3DB6}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,6 +78,5 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{66C2327B-990D-4E9D-8B2B-C83F810210F1} = {E8101CB9-E9EC-42E3-94BF-E235C7B22024}
 		{730C2D44-FE6F-4D00-B7A2-1C69B72D4488} = {E8101CB9-E9EC-42E3-94BF-E235C7B22024}
-		{053A363B-8984-446C-BCE7-88146CB61AD2} = {E8101CB9-E9EC-42E3-94BF-E235C7B22024}
 	EndGlobalSection
 EndGlobal
